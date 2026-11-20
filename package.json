@@ -1,0 +1,29 @@
+{
+  "name": "ipl-auction-multiplayer",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Multiplayer IPL Auction Simulator \u2014 play with friends, AI fills the empty franchises",
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c yellow,cyan \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "vite",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "node test/simulate.js && node test/socket-wiring.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.11",
+    "@vitejs/plugin-react": "^4.3.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

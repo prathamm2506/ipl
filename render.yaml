@@ -1,0 +1,12 @@
+# Render Blueprint — one Web Service runs the Socket.IO server AND serves the built React app.
+services:
+  - type: web
+    name: ipl-auction
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
