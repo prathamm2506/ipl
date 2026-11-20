@@ -1,0 +1,26 @@
+// Franchises, colours, AI personalities and official IPL 2026 (mini auction) remaining purses in lakhs.
+// Personality knobs (all ~0-0.3): aggression = overall willingness, star = extra for 85+ rated,
+// youth = extra for age <= 24, experience = extra for age >= 31, overseas = extra for overseas players,
+// bargain = extra for rating < 75, spin = extra for spinners.
+module.exports = [
+  { id: 'CSK', name: 'Chennai Super Kings', color: '#F9CD05', ink: '#0B2A63', purse26: 4340,
+    persona: { label: 'Trusts experience', aggression: 1.0, star: 0.05, youth: 0, experience: 0.22, overseas: 0.05, bargain: 0.05, spin: 0.15 } },
+  { id: 'MI', name: 'Mumbai Indians', color: '#004BA0', ink: '#FFFFFF', purse26: 275,
+    persona: { label: 'Scouts young talent', aggression: 1.05, star: 0.12, youth: 0.2, experience: 0, overseas: 0.05, bargain: 0, spin: 0 } },
+  { id: 'RCB', name: 'Royal Challengers Bengaluru', color: '#D1171B', ink: '#FFFFFF', purse26: 1640,
+    persona: { label: 'Chases big names', aggression: 1.08, star: 0.22, youth: 0.05, experience: 0, overseas: 0.1, bargain: 0, spin: 0 } },
+  { id: 'KKR', name: 'Kolkata Knight Riders', color: '#3A225D', ink: '#F2C14E', purse26: 6430,
+    persona: { label: 'Loves all-rounders & mystery spin', aggression: 1.05, star: 0.1, youth: 0.05, experience: 0.05, overseas: 0.12, bargain: 0, spin: 0.18 } },
+  { id: 'SRH', name: 'Sunrisers Hyderabad', color: '#FF822A', ink: '#000000', purse26: 2550,
+    persona: { label: 'Pays for firepower', aggression: 1.06, star: 0.18, youth: 0.05, experience: 0, overseas: 0.12, bargain: 0, spin: 0 } },
+  { id: 'DC', name: 'Delhi Capitals', color: '#17449B', ink: '#EF1B23', purse26: 2180,
+    persona: { label: 'Builds around an Indian core', aggression: 1.0, star: 0.08, youth: 0.12, experience: 0.05, overseas: 0, bargain: 0.08, spin: 0.05 } },
+  { id: 'PBKS', name: 'Punjab Kings', color: '#DD1F2D', ink: '#FFFFFF', purse26: 1150,
+    persona: { label: 'Deepest pockets, bids hard', aggression: 1.14, star: 0.15, youth: 0.05, experience: 0.05, overseas: 0.05, bargain: 0, spin: 0 } },
+  { id: 'GT', name: 'Gujarat Titans', color: '#1B2133', ink: '#C8A951', purse26: 1290,
+    persona: { label: 'Bowling-first, disciplined', aggression: 0.97, star: 0.08, youth: 0.05, experience: 0.1, overseas: 0.05, bargain: 0.1, spin: 0.08 } },
+  { id: 'LSG', name: 'Lucknow Super Giants', color: '#00A0E3', ink: '#0A1F44', purse26: 2295,
+    persona: { label: 'Splashes on marquee buys', aggression: 1.08, star: 0.2, youth: 0.05, experience: 0.05, overseas: 0.05, bargain: 0, spin: 0 } },
+  { id: 'RR', name: 'Rajasthan Royals', color: '#EA1A85', ink: '#FFFFFF', purse26: 1605,
+    persona: { label: 'Bargain hunters, data-driven', aggression: 0.95, star: 0, youth: 0.18, experience: 0, overseas: 0.08, bargain: 0.22, spin: 0.08 } },
+];
